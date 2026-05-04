@@ -4,7 +4,7 @@ An interactive resume-style portfolio for Vansh Gupta, a Computer Science Engine
 
 ## Live Demo
 
-[https://https-portfolio-website-one-kappa-2.vercel.app](https://https-portfolio-website-one-kappa-2.vercel.app)
+[https://vansh-gupta-portfolio.vercel.app](https://vansh-gupta-portfolio.vercel.app)
 
 ## Sections
 
