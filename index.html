@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vansh Gupta | Resume Portfolio</title>
+    <meta
+      name="description"
+      content="Resume-style portfolio for Vansh Gupta, a Computer Science AIML student focused on AI-powered web applications and problem solving."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("portfolio-theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <aside class="side-rail" aria-label="Section progress">
+      <a href="#home" class="rail-link is-active" data-section="home"><span>Home</span></a>
+      <a href="#summary" class="rail-link" data-section="summary"><span>Summary</span></a>
+      <a href="#education" class="rail-link" data-section="education"><span>Education</span></a>
+      <a href="#skills" class="rail-link" data-section="skills"><span>Skills</span></a>
+      <a href="#work" class="rail-link" data-section="work"><span>Projects</span></a>
+      <a href="#achievements" class="rail-link" data-section="achievements"><span>Achievements</span></a>
+      <a href="#contact" class="rail-link" data-section="contact"><span>Contact</span></a>
+    </aside>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span>VG</span>
+        Vansh Gupta
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle magnet" type="button" aria-label="Toggle dark and light mode">
+        <i data-lucide="moon"></i>
+      </button>
+      <a class="header-cta magnet" href="#contact">Contact me</a>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" data-section>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Resume portfolio</p>
+          <h1>Vansh Gupta</h1>
+          <p class="hero-text">
+            Computer Science Engineering student specializing in AIML at ABES Engineering College, Ghaziabad.
+            I build AI-focused web applications and practice data structures and algorithms consistently.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary magnet" href="#work"><i data-lucide="folder-kanban"></i> View projects</a>
+            <a class="button ghost magnet" href="#contact"><i data-lucide="contact"></i> View contact</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="profile-orbit">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80"
+              alt="Code editor on a development workstation"
+            />
+            <div class="orbit-card card-one">
+              <strong>400+</strong>
+              <span>LeetCode problems</span>
+            </div>
+            <div class="orbit-card card-two">
+              <strong>AIML</strong>
+              <span>CSE specialization</span>
+            </div>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div>
+            <span>Java</span><span>C++</span><span>Python</span><span>React</span><span>FastAPI</span><span>PostgreSQL</span>
+            <span>Java</span><span>C++</span><span>Python</span><span>React</span><span>FastAPI</span><span>PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip section" aria-label="Resume highlights">
+        <div class="stat reveal"><strong data-count="400" data-suffix="+">0</strong><span>LeetCode problems solved</span></div>
+        <div class="stat reveal"><strong data-count="150" data-suffix="+">0</strong><span>CodeChef problems solved</span></div>
+        <div class="stat reveal"><strong data-count="2" data-suffix="+">0</strong><span>Major AI projects</span></div>
+        <div class="stat reveal"><strong data-count="93" data-suffix="%">0</strong><span>Intermediate score</span></div>
+      </section>
+
+      <section class="about section pad" id="summary" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Professional summary</p>
+          <h2>About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=80"
+              alt="Modern workspace for software development"
+            />
+          </div>
+          <div class="about-panel reveal">
+            <h3>Computer Science AIML student building practical AI and web projects.</h3>
+            <p>
+              I am a Computer Science student with a focus on AI and Machine Learning, passionate about building practical and meaningful tech solutions.
+              I enjoy working on full-stack projects using technologies like React, FastAPI, and Python, and have developed applications that solve real-world problems.
+              I have a strong interest in problem-solving, with over 500 coding problems solved across platforms like LeetCode and CodeChef.
+              I am always eager to learn new technologies, improve my skills, and contribute to impactful projects.
+            </p>
+            <div class="tabs" role="tablist" aria-label="Resume summary details">
+              <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="focus">Focus</button>
+              <button class="tab" type="button" role="tab" aria-selected="false" data-tab="tools">Tools</button>
+              <button class="tab" type="button" role="tab" aria-selected="false" data-tab="profiles">Profiles</button>
+            </div>
+            <div class="tab-panel is-active" id="focus" role="tabpanel">
+              <article><time>AIML</time><h4>AI-powered applications</h4><p>Career path navigation, resume review, recommendations, and structured feedback systems.</p></article>
+              <article><time>DSA</time><h4>Problem solving</h4><p>Consistent practice across LeetCode and CodeChef to strengthen implementation and algorithmic thinking.</p></article>
+            </div>
+            <div class="tab-panel" id="tools" role="tabpanel">
+              <article><time>Code</time><h4>Languages</h4><p>Java, C/C++, Python, HTML, CSS, and JavaScript.</p></article>
+              <article><time>Build</time><h4>Developer tools</h4><p>GitHub, VS Code, IntelliJ IDEA, and Dev C++.</p></article>
+            </div>
+            <div class="tab-panel" id="profiles" role="tabpanel">
+              <article><time>Email</time><h4>abhivansh05@gmail.com</h4><p>Primary contact for internships, projects, and collaboration.</p></article>
+              <article><time>Online</time><h4>LinkedIn and LeetCode</h4><p>Profile links are available in the contact section.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section pad" id="education" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>2027</span>
+            <h3>ABES Engineering College</h3>
+            <p>B.Tech in Computer Science Engineering with AIML, Ghaziabad, UP. Aug 2023 - June 2027.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2022</span>
+            <h3>Vanasthali Public School</h3>
+            <p>Intermediate completed with 93 percent, Baraut, UP.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>2020</span>
+            <h3>Vanasthali Public School</h3>
+            <p>Matriculation completed with 85 percent, Baraut, UP.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>AIML</span>
+            <h3>Current direction</h3>
+            <p>Focused on AI, machine learning concepts, software development, and applied web projects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services section pad" id="skills" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical skills</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal tilt">
+            <i data-lucide="braces"></i>
+            <h3>Languages</h3>
+            <p>Java, C/C++, Python, HTML, CSS, and JavaScript.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <i data-lucide="layout-dashboard"></i>
+            <h3>Frontend</h3>
+            <p>React, responsive UI, learner-friendly dashboards, forms, and accessible web pages.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <i data-lucide="server-cog"></i>
+            <h3>Backend</h3>
+            <p>FastAPI, PostgreSQL, Python services, API integration, and deployment setup.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <i data-lucide="brain-circuit"></i>
+            <h3>AI Tools</h3>
+            <p>OpenAI API, AI feedback flows, resume analysis, and recommendation logic.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <i data-lucide="file-code-2"></i>
+            <h3>Libraries</h3>
+            <p>Streamlit and PyPDF2 for resume analysis, PDF/TXT parsing, and app prototyping.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <i data-lucide="wrench"></i>
+            <h3>Developer Tools</h3>
+            <p>GitHub, VS Code, IntelliJ IDEA, and Dev C++.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work section pad" id="work" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Resume projects</h2>
+        </div>
+        <div class="filter-bar reveal" aria-label="Project filters">
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="ai">AI</button>
+          <button class="filter" type="button" data-filter="resume">Resume tool</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="ai" data-title="Skill Sync - Match Your Skills with Opportunities" data-tools="React.js, CSS, FastAPI, PostgreSQL, Python, REST APIs" data-copy="Developed a web application that allows users to create profiles by adding their skills, projects, and professional details. Built a search-based system where users can discover projects and opportunities aligned with their skill sets. Implemented a connection feature for collaboration with others having similar interests. Integrated chat functionality for real-time communication and designed a responsive, user-friendly interface.">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Analytics dashboard on laptop" />
+            <div><span>AI platform</span><h3>Skill Sync</h3><button type="button">View project</button></div>
+          </article>
+          <article class="project-card reveal" data-category="resume" data-title="Smart Resume Reviewer" data-tools="Python, Streamlit, OpenAI API, PyPDF2" data-copy="Built a Streamlit web app to review resumes and provide structured feedback on content, clarity, and ATS relevance. It supports single-resume analysis and side-by-side PDF/TXT comparison.">
+            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1000&q=80" alt="Design and review interface on desktop" />
+            <div><span>Resume tool</span><h3>Smart Resume Reviewer</h3><button type="button">View project</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pricing section pad" id="achievements" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Achievements</p>
+          <h2>Coding achievements</h2>
+        </div>
+        <div class="price-grid">
+          <article class="price-card reveal">
+            <span>LeetCode</span>
+            <h3>400+</h3>
+            <p>Solved over 400 problems and earned 50-day and 100-day streak achievements.</p>
+            <a href="https://leetcode.com/u/vanshgupta08/" target="_blank" rel="noreferrer">Open profile</a>
+          </article>
+          <article class="price-card featured reveal">
+            <span>CodeChef</span>
+            <h3>150+</h3>
+            <p>Solved over 150 problems, improving competitive programming and implementation skills.</p>
+            <a href="https://www.codechef.com/users/vanshgupta05" target="_blank" rel="noreferrer">Open profile</a>
+          </article>
+          <article class="price-card reveal">
+            <span>LeetCode Badge</span>
+            <h3>Streak</h3>
+            <p>Earned monthly badge by solving problems consecutively.</p>
+            <a href="https://leetcode.com/u/vanshgupta08/" target="_blank" rel="noreferrer">Open profile</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section pad" id="contact" data-section>
+        <div class="contact-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Contact details</h2>
+            <p>Resume contact information and profile links.</p>
+            <div class="contact-cards">
+              <div class="contact-card"><i data-lucide="mail"></i> abhivansh05@gmail.com</div>
+              <div class="contact-card"><i data-lucide="phone"></i> +91 8126240890</div>
+              <a class="contact-card" href="https://linkedin.com/in/vansh-gupta-82a831295/" target="_blank" rel="noreferrer">
+                <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.94 8.98H3.56V20h3.38V8.98ZM7.2 5.58A1.96 1.96 0 1 0 3.28 5.58a1.96 1.96 0 0 0 3.92 0ZM20.72 13.72c0-3.15-1.68-4.62-3.92-4.62-1.8 0-2.61.99-3.06 1.69V8.98h-3.24V20h3.38v-5.45c0-1.44.27-2.83 2.05-2.83 1.75 0 1.78 1.64 1.78 2.92V20h3.39l-.38-6.28Z" />
+                </svg>
+                LinkedIn
+              </a>
+              <a class="contact-card" href="https://leetcode.com/u/vanshgupta08/" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> LeetCode</a>
+              <a class="contact-card" href="https://github.com/vanshgupta8" target="_blank" rel="noreferrer">
+                <svg class="brand-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.5c-5.25 0-9.5 4.25-9.5 9.5 0 4.2 2.72 7.76 6.5 9.02.48.08.65-.2.65-.46v-1.62c-2.64.57-3.2-1.27-3.2-1.27-.43-1.1-1.06-1.4-1.06-1.4-.86-.58.07-.57.07-.57.95.07 1.45.98 1.45.98.85 1.44 2.22 1.02 2.76.78.09-.61.33-1.02.6-1.26-2.1-.24-4.32-1.05-4.32-4.69 0-1.04.37-1.88.98-2.55-.1-.24-.43-1.21.09-2.52 0 0 .8-.26 2.62.97a9.02 9.02 0 0 1 4.76 0c1.82-1.23 2.62-.97 2.62-.97.52 1.31.19 2.28.09 2.52.61.67.98 1.51.98 2.55 0 3.65-2.22 4.45-4.34 4.69.34.29.64.87.64 1.76v2.6c0 .26.17.55.66.46A9.5 9.5 0 0 0 12 2.5Z" />
+                </svg>
+                GitHub
+              </a>
+              <a class="contact-card" href="https://drive.google.com/file/d/1QFmqVTVfas1298oTRFjBtph7ldfXvq8F/view" target="_blank" rel="noreferrer"><i data-lucide="file-text"></i> Resume</a>
+            </div>
+          </div>
+          <form class="contact-form reveal" action="https://formsubmit.co/abhivansh05@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New portfolio contact message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+            <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+            <label>Purpose<select name="purpose"><option>Internship</option><option>Project collaboration</option><option>Technical discussion</option><option>Other opportunity</option></select></label>
+            <label>Message<textarea name="message" placeholder="Write your message" required></textarea></label>
+            <button class="button primary magnet" type="submit"><i data-lucide="send"></i> Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Vansh Gupta. Resume portfolio for CSE AIML, projects, skills, and achievements.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <dialog class="project-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close project details"><i data-lucide="x"></i></button>
+      <img src="" alt="" />
+      <p class="eyebrow">Project details</p>
+      <h2 id="modal-title"></h2>
+      <p class="modal-copy"></p>
+      <div class="modal-tools"></div>
+    </dialog>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
